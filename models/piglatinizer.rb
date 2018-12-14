@@ -1,19 +1,6 @@
-class Sinatra::Base
-  set :show_exceptions => false
-
-  error { |err|
-    Rack::Response.new(
-      [{'error' => err.message}.to_json],
-      500,
-      {'Content-type' => 'application/json'}
-    ).finish
-  }
-end
-
 class PigLatinizer
 
   def piglatinize(string)
-    # binding.pry
     if string == nil
       "Wrong argument"
     elsif string.split(" ").length == 1
