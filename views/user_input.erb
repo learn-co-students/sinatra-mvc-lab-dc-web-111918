@@ -2,10 +2,16 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Piglatinizer</title>
   </head>
   <body>
-    <h1>Pig Latinizer</h1>
-  
+    <h1>Pig Latinizer!</h1>
+    <form action="/piglatinize" method="POST">
+      <label for="user_phrase">Enter your phrase:</label>
+
+      <p><input type="text" name="user_input" id="user_input" /></p>
+
+      <input type="submit" value="Submit"/>
+    </form>
   </body>
 </html>
